@@ -3,7 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="icon" href="icon.jpg" type="image/jpeg">
+<link rel="icon" href="icon.png" type="image/png" sizes="any">
+<link rel="apple-touch-icon" href="icon.png">
+<meta name="theme-color" content="#071A2B">
+<meta name="description" content="JC_AZ4B — digital services, technical assistance, creative design and online procedures.">
 <title>JC_AZ4B</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,7 +29,9 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:va
 header.s{background:rgba(7,26,43,.96);box-shadow:0 6px 24px rgba(0,0,0,.25);backdrop-filter:blur(8px)}
 .nav{display:flex;align-items:center;gap:20px;min-height:62px;color:#fff}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px;direction:ltr}
-.lslot{width:38px;height:38px;border-radius:8px;display:block;object-fit:contain;flex:none}
+.lslot{width:42px;height:42px;border-radius:10px;display:block;object-fit:contain;flex:none;background:#fff;padding:2px;box-shadow:0 0 0 1px rgba(34,211,238,.22);transition:transform .2s}
+.logo:hover .lslot{transform:translateY(-1px)}
+.logo{white-space:nowrap}
 .mkold{width:34px;height:34px;border-radius:8px;background:var(--blue);display:grid;place-items:center;font-size:13px;position:relative;overflow:hidden}
 .mk:after{content:"";position:absolute;width:14px;height:14px;background:var(--cy);inset-inline-end:-5px;bottom:-5px;transform:rotate(45deg)}
 .links{display:flex;gap:28px;margin-inline:auto;font-size:15px;font-weight:600}
@@ -95,6 +100,35 @@ h2{font-size:clamp(26px,3.4vw,38px);line-height:1.2;font-weight:800;letter-spaci
 .cc svg{width:24px;height:24px}
 .cc b{display:block;font-size:15px}.cc span{color:var(--mut);font-size:14px;direction:ltr;unicode-bidi:isolate;display:block}
 footer{background:#050f1a;color:#7B8FA5;text-align:center;padding:24px;font-size:14px}
+
+/* Customer trust section */
+.stats{padding:44px 0;background:linear-gradient(135deg,#071A2B,#0B3154);color:#fff;position:relative;overflow:hidden}
+.stats:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 12% 20%,rgba(34,211,238,.13),transparent 34%),radial-gradient(circle at 90% 90%,rgba(22,119,255,.2),transparent 36%);pointer-events:none}
+.stats-grid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.stat{padding:16px 12px;text-align:center;border-inline-end:1px solid rgba(255,255,255,.14)}
+.stat:last-child{border-inline-end:0}
+.stat strong{display:block;font-size:clamp(30px,4vw,44px);line-height:1.2;font-weight:800;letter-spacing:-1px;background:linear-gradient(90deg,#fff,#65dcff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{display:block;margin-top:9px;color:#C6D8E9;font-size:14px;font-weight:700}
+.reviews{background:var(--soft)}
+.reviews-head{text-align:center;max-width:700px;margin:0 auto 34px}
+.reviews-head .sub{margin:12px auto 0}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review-card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:24px;box-shadow:0 8px 26px rgba(7,26,43,.04);display:flex;flex-direction:column;min-height:210px}
+.review-stars{color:var(--blue);font-size:48px;font-weight:800;line-height:.8;margin-bottom:14px}
+.review-card p{color:var(--mut);font-size:14.5px;line-height:1.75}
+.review-person{display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:22px}
+.review-avatar{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--cy));color:#fff;font-weight:800;flex:none}
+.review-person b{display:block;font-size:14px}.review-person small{display:block;color:var(--mut);font-size:12px}
+.review-cta{display:flex;justify-content:center;margin-top:28px}
+.review-cta .btn{gap:9px}
+.review-cta svg{width:18px;height:18px}
+.follow-float{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:center;gap:10px;padding:12px 17px;border-radius:999px;color:#fff;font-weight:800;font-size:14px;letter-spacing:.1px;background:linear-gradient(110deg,#F9A03F 0%,#E1306C 52%,#833AB4 100%);box-shadow:0 10px 28px rgba(131,58,180,.34);transition:transform .2s,box-shadow .2s;direction:ltr}
+.follow-float:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(131,58,180,.42)}
+.follow-float svg{width:22px;height:22px;flex:none}
+[dir=rtl] .follow-float{right:auto;left:22px}
+@media(max-width:760px){.review-grid{grid-template-columns:1fr}.review-card{min-height:0}.stats-grid{gap:4px}.stat{padding:12px 6px}.stat span{font-size:12px}.follow-float{right:14px;bottom:14px;padding:12px 14px}.follow-float span{font-size:13px}[dir=rtl] .follow-float{left:14px}}
+@media(max-width:420px){.stats-grid{grid-template-columns:1fr;gap:0}.stat{border-inline-end:0;border-bottom:1px solid rgba(255,255,255,.14);padding:16px}.stat:last-child{border-bottom:0}}
+
 @media(max-width:960px){.hg,.ab{grid-template-columns:1fr}.vis{height:340px}.sg{grid-template-columns:repeat(2,1fr)}.tg,.st{grid-template-columns:repeat(2,1fr);gap:28px}.st:before{display:none}.fg{grid-template-columns:1fr}
 .bg{display:block}.links{position:absolute;top:100%;inset-inline:0;background:var(--navy);flex-direction:column;gap:0;padding:8px 22px 18px;max-height:0;overflow:hidden;padding-block:0;transition:.3s}
 .links.o2{max-height:420px;padding-block:8px 18px}.links a{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08)}.nav>.btn{display:none}.lang{margin-inline-start:auto}}
@@ -106,8 +140,8 @@ footer{background:#050f1a;color:#7B8FA5;text-align:center;padding:24px;font-size
 <body>
 <header id="hd"><div class="w nav">
 <a class="logo" href="#home">
-<img class="lslot" id="logoSlot" src="logo.jpg" alt="JC_AZ4B logo">JC_AZ4B</a>
-<nav class="links" id="lk"><a href="#home" data-i="n0"></a><a href="#services" data-i="n1"></a><a href="#about" data-i="n2"></a><a href="#how" data-i="n3"></a><a href="#contact" data-i="n4"></a></nav>
+<img class="lslot" id="logoSlot" src="icon.png" alt="JC_AZ4B logo">JC_AZ4B</a>
+<nav class="links" id="lk"><a href="#home" data-i="n0"></a><a href="#services" data-i="n1"></a><a href="#about" data-i="n2"></a><a href="#reviews" data-i="n5"></a><a href="#how" data-i="n3"></a><a href="#contact" data-i="n4"></a></nav>
 <a class="btn p" href="#contact" data-i="cta"></a>
 <div class="lang" id="lg"><button data-l="ar">العربية</button><button data-l="fr">FR</button><button data-l="en">EN</button></div>
 <button class="bg" id="bg" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -126,6 +160,12 @@ footer{background:#050f1a;color:#7B8FA5;text-align:center;padding:24px;font-size
 <div class="chip c1" id="c1"></div><div class="chip c2" id="c2"></div><div class="chip c3" id="c3"></div>
 </div></div></div>
 
+<section class="stats" aria-label="JC_AZ4B at a glance"><div class="w stats-grid">
+<div class="stat"><strong>5,000+</strong><span data-i="m1">Happy clients</span></div>
+<div class="stat"><strong>100+</strong><span data-i="m2">Services offered</span></div>
+<div class="stat"><strong>100%</strong><span data-i="m3">Commitment to service quality</span></div>
+</div></section>
+
 <section class="ct" id="contact"><div class="w"><h2 data-i="ch"></h2><p data-i="cp"></p>
 <div class="cb">
 <a class="cc" href="https://wa.me/213772705246" target="_blank" rel="noopener"><i style="background:#25D366"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></i><div><b>WhatsApp</b><span>+213 772 70 52 46</span></div></a>
@@ -141,9 +181,20 @@ footer{background:#050f1a;color:#7B8FA5;text-align:center;padding:24px;font-size
 
 <section id="about"><div class="w ab"><div><h2 data-i="ah"></h2><p data-i="ap"></p><p data-i="ap2"></p></div><div class="abx" id="abx"></div></div></section>
 
+<section class="reviews" id="reviews"><div class="w">
+<div class="reviews-head"><h2 data-i="rh">What customers say about us</h2><p class="sub" data-i="rs">Your experience matters. We are building this space to showcase genuine feedback from customers.</p></div>
+<div class="review-grid">
+<article class="review-card"><div class="review-stars" aria-hidden="true">“</div><p data-i="rp1">Your feedback could help someone choose the right digital service. Share your experience with JC_AZ4B.</p><div class="review-person"><div class="review-avatar" aria-hidden="true">JC</div><div><b data-i="rname1">Customer feedback</b><small data-i="rmeta1">Real review to be added</small></div></div></article>
+<article class="review-card"><div class="review-stars" aria-hidden="true">“</div><p data-i="rp2">Tell us what went well and what we can improve. Honest feedback helps us deliver better service.</p><div class="review-person"><div class="review-avatar" aria-hidden="true">JC</div><div><b data-i="rname2">Your opinion matters</b><small data-i="rmeta2">Customer experience</small></div></div></article>
+<article class="review-card"><div class="review-stars" aria-hidden="true">“</div><p data-i="rp3">Have we helped with a digital procedure, design, or technical issue? We would love to hear from you.</p><div class="review-person"><div class="review-avatar" aria-hidden="true">JC</div><div><b data-i="rname3">Share your experience</b><small data-i="rmeta3">Community feedback</small></div></div></article>
+</div>
+<div class="review-cta"><a class="btn p" href="https://instagram.com/jc_az4b" target="_blank" rel="noopener" data-i="rcta">Leave feedback on Instagram</a></div>
+</div></section>
+
 <section class="hw" id="how"><div class="w"><h2 data-i="hw" style="text-align:center;margin-bottom:48px"></h2><div class="st" id="st"></div></div></section>
 
 </main>
+<a class="follow-float" href="https://instagram.com/jc_az4b" target="_blank" rel="noopener noreferrer" aria-label="Follow JC_AZ4B on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span data-i="follow">Follow us!!</span></a>
 <footer data-i="fo"></footer>
 
 <script>
@@ -151,7 +202,7 @@ var I={doc:'<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/>',pre
 var ico=function(k){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+I[k]+'</svg>'};
 var K=['doc','pres','pc','head','form','pay','web','brand'];
 var T={
-en:{n0:'Home',n1:'Services',n2:'About',n3:'How It Works',n4:'Contact',cta:'Request a Service',h:['Digital Services.','Simple Solutions.','Better Results.'],
+en:{n5:'Reviews',m1:'Happy clients',m2:'Services offered',m3:'Commitment to service quality',rh:'What customers say about us',rs:'Your experience matters. This space is for genuine feedback from our customers.',rp1:'Have you used one of our services? Share your experience and help others discover JC_AZ4B.',rp2:'Your honest feedback helps us understand what works well and where we can improve.',rp3:'From digital procedures to design and technical assistance, we would love to hear how we helped you.',rname1:'Customer feedback',rmeta1:'Share your experience',rname2:'Your opinion matters',rmeta2:'Help us improve',rname3:'JC_AZ4B community',rmeta3:'Customer voices',rcta:'Leave feedback on Instagram',follow:'Follow us!!',n0:'Home',n1:'Services',n2:'About',n3:'How It Works',n4:'Contact',cta:'Request a Service',h:['Digital Services.','Simple Solutions.','Better Results.'],
 hp:'From digital registrations and technical assistance to presentations, research, branding and landing pages — JC_AZ4B brings practical digital services together in one place.',b2:'Explore Our Services',
 ch:['Presentations','Landing Pages','Online Payments'],
 tr:[['Simple','Easy communication and straightforward service.'],['Professional','Clean and carefully prepared results.'],['Digital','Modern tools and digital workflows.'],['Accessible','Services designed to be easy to request and understand.']],
@@ -163,7 +214,7 @@ ah:'Digital help, without the complexity.',ap:'JC_AZ4B is a digital service bran
 ab:['Save your time','Simplify digital procedures','Practical solutions'],
 hw:'How It Works',sp:[['Choose a Service','Select what you need.'],['Contact Us','Send your request through WhatsApp, Telegram or Instagram.'],['Discuss the Details','We understand your requirements and agree on the details.'],['Get Your Service','Receive the completed service or assistance.']],
 ch2:'Contact Us',cp:'Send your request through WhatsApp, Telegram or Instagram and we will get back to you.',fo:'© 2026 JC_AZ4B. Digital solutions for easier work.'},
-fr:{n0:'Accueil',n1:'Services',n2:'À propos',n3:'Comment ça marche',n4:'Contact',cta:'Demander un service',h:['Services numériques.','Solutions simples.','Meilleurs résultats.'],
+fr:{n5:'Avis clients',m1:'Clients satisfaits',m2:'Services proposés',m3:'Engagement qualité',rh:'Ce que nos clients disent de nous',rs:'Votre expérience compte. Cet espace est dédié aux avis authentiques de nos clients.',rp1:'Vous avez utilisé l’un de nos services ? Partagez votre expérience et aidez d’autres personnes à découvrir JC_AZ4B.',rp2:'Vos commentaires sincères nous aident à identifier nos points forts et à nous améliorer.',rp3:'Démarches numériques, design ou assistance technique : dites-nous comment nous avons pu vous aider.',rname1:'Avis client',rmeta1:'Partagez votre expérience',rname2:'Votre avis compte',rmeta2:'Aidez-nous à progresser',rname3:'Communauté JC_AZ4B',rmeta3:'Paroles de clients',rcta:'Donner votre avis sur Instagram',follow:'Suivez-nous !!',n0:'Accueil',n1:'Services',n2:'À propos',n3:'Comment ça marche',n4:'Contact',cta:'Demander un service',h:['Services numériques.','Solutions simples.','Meilleurs résultats.'],
 hp:'Des inscriptions en ligne et de l’assistance technique aux présentations, recherches, identité visuelle et landing pages, JC_AZ4B réunit des services numériques pratiques en un seul endroit.',b2:'Découvrir nos services',
 ch:['Présentations','Landing pages','Paiements en ligne'],
 tr:[['Simple','Une communication facile et un service direct.'],['Professionnel','Des résultats soignés et bien préparés.'],['Numérique','Des outils modernes et des méthodes digitales.'],['Accessible','Des services faciles à demander et à comprendre.']],
@@ -175,7 +226,7 @@ ah:'Des services numériques, sans complexité.',ap:'JC_AZ4B est une marque de s
 ab:['Gagnez du temps','Démarches numériques simplifiées','Solutions pratiques'],
 hw:'Comment ça marche',sp:[['Choisissez un service','Sélectionnez ce dont vous avez besoin.'],['Contactez-nous','Envoyez votre demande via WhatsApp, Telegram ou Instagram.'],['Définissez les détails','Nous comprenons vos besoins et convenons des détails ensemble.'],['Recevez votre service','Recevez le service terminé ou l’assistance demandée.']],
 ch2:'Contactez-nous',cp:'Envoyez votre demande via WhatsApp, Telegram ou Instagram et nous vous répondrons.',fo:'© 2026 JC_AZ4B. Des solutions numériques pour un travail plus simple.'},
-ar:{n0:'الرئيسية',n1:'خدماتنا',n2:'من نحن',n3:'كيف نعمل',n4:'تواصل معنا',cta:'اطلب خدمة',h:['خدمات رقمية.','حلول بسيطة.','نتائج أفضل.'],
+ar:{n5:'آراء العملاء',m1:'عميل راضٍ',m2:'خدمة نقدّمها',m3:'التزام بجودة الخدمة',rh:'ماذا يقول عملاؤنا عنا؟',rs:'تجربتكم تهمّنا. هذا القسم مخصّص لآراء العملاء الحقيقية وتجاربهم.',rp1:'سبق لك الاستفادة من إحدى خدماتنا؟ شارك تجربتك وساعد الآخرين على اكتشاف JC_AZ4B.',rp2:'رأيك الصريح يساعدنا على معرفة ما نقدّمه جيدًا وما يمكننا تحسينه.',rp3:'سواء كانت إجراءات رقمية أو تصميمًا أو مساعدة تقنية، يسعدنا أن نعرف كيف ساعدناك.',rname1:'رأي عميل',rmeta1:'شارك تجربتك',rname2:'رأيك يهمّنا',rmeta2:'ساعدنا على التحسّن',rname3:'مجتمع JC_AZ4B',rmeta3:'آراء العملاء',rcta:'شارك رأيك على إنستغرام',follow:'تابعنا!!',n0:'الرئيسية',n1:'خدماتنا',n2:'من نحن',n3:'كيف نعمل',n4:'تواصل معنا',cta:'اطلب خدمة',h:['خدمات رقمية.','حلول بسيطة.','نتائج أفضل.'],
 hp:'من التسجيلات الإلكترونية والمساعدة التقنية إلى العروض التقديمية والبحوث والهوية البصرية وصفحات الهبوط، تجمع JC_AZ4B خدمات رقمية عملية في مكان واحد.',b2:'اكتشف خدماتنا',
 ch:['العروض التقديمية','صفحات الهبوط','الدفع الإلكتروني'],
 tr:[['بسيط','تواصل سهل وخدمة مباشرة.'],['احترافي','نتائج مرتبة ومُعدّة بعناية.'],['رقمي','أدوات حديثة وطرق عمل رقمية.'],['سهل الوصول','خدمات يسهل طلبها وفهمها.']],
