@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="icon.png" type="image/png" sizes="any">
+<link rel="apple-touch-icon" href="icon.png">
+<meta name="theme-color" content="#071A2B">
+<meta name="description" content="JC_AZ4B — digital services, technical assistance, creative design and online procedures.">
+<title>JC_AZ4B</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071A2B;--dk:#0B2740;--blue:#1677FF;--cy:#22D3EE;--bg:#fff;--soft:#F5F8FC;--tx:#0B1220;--mut:#64748B;--card:#fff;--bd:#E2E8F0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#071A2B;--soft:#0B2740;--tx:#E6EEF7;--mut:#94A3B8;--card:#0F2F4D;--bd:#1E3A56}}
+:root[data-theme="dark"]{--bg:#071A2B;--soft:#0B2740;--tx:#E6EEF7;--mut:#94A3B8;--card:#0F2F4D;--bd:#1E3A56}
+html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px));height:100%}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 'Manrope','Cairo',system-ui,sans-serif;min-height:100%}
+[dir=rtl] body{font-family:'Cairo','Manrope',system-ui,sans-serif;line-height:1.8}
+a{color:inherit;text-decoration:none}
+.w{max-width:1160px;margin:auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 24px;border-radius:10px;font-weight:700;font-size:15px;border:1.5px solid transparent;cursor:pointer;transition:.2s;font-family:inherit}
+.p{background:var(--blue);color:#fff}.p:hover{background:#0e63d9;transform:translateY(-1px)}
+.o{border-color:rgba(255,255,255,.35);color:#fff}.o:hover{border-color:var(--cy);color:var(--cy)}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--navy);transition:.25s;padding-block:6px}
+header.s{background:rgba(7,26,43,.96);box-shadow:0 6px 24px rgba(0,0,0,.25);backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;gap:20px;min-height:62px;color:#fff}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:.5px;direction:ltr}
+.lslot{width:42px;height:42px;border-radius:10px;display:block;object-fit:contain;flex:none;background:#fff;padding:2px;box-shadow:0 0 0 1px rgba(34,211,238,.22);transition:transform .2s}
+.logo:hover .lslot{transform:translateY(-1px)}
+.logo{white-space:nowrap}
+.mkold{width:34px;height:34px;border-radius:8px;background:var(--blue);display:grid;place-items:center;font-size:13px;position:relative;overflow:hidden}
+.mk:after{content:"";position:absolute;width:14px;height:14px;background:var(--cy);inset-inline-end:-5px;bottom:-5px;transform:rotate(45deg)}
+.links{display:flex;gap:28px;margin-inline:auto;font-size:15px;font-weight:600}
+.links a{opacity:.8}.links a:hover{opacity:1;color:var(--cy)}
+.lang{display:flex;border:1px solid rgba(255,255,255,.25);border-radius:8px;overflow:hidden}
+.lang button{background:none;border:0;color:#fff;padding:6px 11px;font:700 13px inherit;font-family:inherit;cursor:pointer;opacity:.7}
+.lang button.a{background:var(--blue);opacity:1}
+.bg{display:none;background:none;border:0;color:#fff;width:40px;height:40px;cursor:pointer}
+.bg span{display:block;width:22px;height:2px;background:#fff;margin:5px auto;transition:.2s}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;padding:72px 0 96px}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(34,211,238,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(34,211,238,.06) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(90deg,transparent,#000 70%)}
+[dir=rtl] .hero:before{mask-image:linear-gradient(270deg,transparent,#000 70%)}
+.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;position:relative}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.12;font-weight:800;letter-spacing:-.5px}
+h1 span{display:block}h1 span:last-child{color:var(--cy)}
+.hp{color:#B6C6D8;max-width:520px;margin:22px 0 32px;font-size:17px}
+.bs{display:flex;gap:12px;flex-wrap:wrap}
+.vis{position:relative;height:400px}
+.pan{position:absolute;inset:30px 20px 30px 20px;background:var(--dk);border:1px solid rgba(34,211,238,.25);border-radius:16px;padding:16px;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.dots{display:flex;gap:6px;margin-bottom:18px}.dots i{width:9px;height:9px;border-radius:50%;background:#2B4660}
+.bar{height:10px;border-radius:5px;background:#16405F;margin-bottom:10px}
+.blk{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.blk b{height:70px;border-radius:10px;background:#12365A;display:block}.blk b:first-child{background:linear-gradient(135deg,var(--blue),#0e4fb3)}
+.chip{position:absolute;background:var(--card);color:var(--tx);border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:10px;font-weight:700;font-size:13px;box-shadow:0 14px 30px rgba(0,0,0,.35);z-index:2}
+.chip svg{width:20px;height:20px;color:var(--blue)}
+.c1{top:0;inset-inline-start:0}.c2{top:42%;inset-inline-end:-6px}.c3{bottom:0;inset-inline-start:14%}
+.vis>svg{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.tr{background:var(--soft);padding:34px 0;border-bottom:1px solid var(--bd)}
+.tg{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.tg div{border-inline-start:3px solid var(--cy);padding-inline-start:14px}
+.tg b{display:block;font-size:17px}.tg p{color:var(--mut);font-size:14px;line-height:1.5}
+section{padding:88px 0}
+h2{font-size:clamp(26px,3.4vw,38px);line-height:1.2;font-weight:800;letter-spacing:-.3px}
+.sub{color:var(--mut);margin:12px 0 44px;max-width:560px}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:24px;transition:.2s}
+.card:hover{border-color:var(--blue);transform:translateY(-3px);box-shadow:0 12px 28px rgba(22,119,255,.1)}
+.ic{width:46px;height:46px;border-radius:11px;background:rgba(22,119,255,.1);color:var(--blue);display:grid;place-items:center;margin-bottom:16px}
+.ic svg{width:24px;height:24px}
+.card h3{font-size:17px;line-height:1.3;margin-bottom:8px}.card p{color:var(--mut);font-size:14.5px;line-height:1.6}
+.card.k{border-color:var(--blue);background:linear-gradient(180deg,rgba(22,119,255,.06),transparent)}
+.ft{background:var(--navy);color:#fff}
+.ft .sub{color:#9FB3C8}
+.fg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px}
+.fc{background:var(--dk);border:1px solid #1B4163;border-radius:16px;padding:22px}
+.pv{height:130px;border-radius:10px;background:#0E2F4F;margin-bottom:18px;display:grid;place-items:center;overflow:hidden;position:relative}
+.pv svg{width:100%;height:100%}
+.fc h3{font-size:19px;margin-bottom:6px}.fc p{color:#9FB3C8;font-size:14.5px}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.ab p{color:var(--mut);margin-top:16px}
+.ab p:first-of-type{color:var(--tx)}
+.abx{background:var(--soft);border:1px solid var(--bd);border-radius:18px;padding:34px;display:grid;gap:14px}
+.abx div{display:flex;gap:12px;align-items:center;font-weight:700}
+.abx svg{width:22px;height:22px;color:var(--blue);flex:none}
+.hw{background:var(--soft)}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.st:before{content:"";position:absolute;top:21px;inset-inline:10%;height:2px;background:var(--bd)}
+.stp{position:relative;text-align:center}
+.n{width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;font-weight:800;display:grid;place-items:center;margin:0 auto 16px;position:relative;box-shadow:0 0 0 6px var(--soft)}
+.stp h3{font-size:17px;margin-bottom:6px}.stp p{color:var(--mut);font-size:14.5px;max-width:220px;margin:auto}
+.ct{background:var(--bg);text-align:center;padding:56px 0;border-bottom:1px solid var(--bd)}
+.ct p{color:var(--mut);max-width:520px;margin:10px auto 26px}
+.cb{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:860px;margin:auto}
+.cc{display:flex;align-items:center;gap:14px;text-align:start;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px 18px;transition:.2s}
+.cc:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(7,26,43,.12)}
+.cc i{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:#fff;flex:none}
+.cc svg{width:24px;height:24px}
+.cc b{display:block;font-size:15px}.cc span{color:var(--mut);font-size:14px;direction:ltr;unicode-bidi:isolate;display:block}
+footer{background:#050f1a;color:#7B8FA5;text-align:center;padding:24px;font-size:14px}
+
+/* Customer trust section */
+.stats{padding:44px 0;background:linear-gradient(135deg,#071A2B,#0B3154);color:#fff;position:relative;overflow:hidden}
+.stats:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 12% 20%,rgba(34,211,238,.13),transparent 34%),radial-gradient(circle at 90% 90%,rgba(22,119,255,.2),transparent 36%);pointer-events:none}
+.stats-grid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.stat{padding:16px 12px;text-align:center;border-inline-end:1px solid rgba(255,255,255,.14)}
+.stat:last-child{border-inline-end:0}
+.stat strong{display:block;font-size:clamp(30px,4vw,44px);line-height:1.2;font-weight:800;letter-spacing:-1px;background:linear-gradient(90deg,#fff,#65dcff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{display:block;margin-top:9px;color:#C6D8E9;font-size:14px;font-weight:700}
+.reviews{background:var(--soft)}
+.reviews-head{text-align:center;max-width:700px;margin:0 auto 34px}
+.reviews-head .sub{margin:12px auto 0}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review-card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:24px;box-shadow:0 8px 26px rgba(7,26,43,.04);display:flex;flex-direction:column;min-height:210px}
+.review-stars{color:var(--blue);font-size:48px;font-weight:800;line-height:.8;margin-bottom:14px}
+.review-card p{color:var(--mut);font-size:14.5px;line-height:1.75}
+.review-person{display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:22px}
+.review-avatar{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--blue),var(--cy));color:#fff;font-weight:800;flex:none}
+.review-person b{display:block;font-size:14px}.review-person small{display:block;color:var(--mut);font-size:12px}
+.review-cta{display:flex;justify-content:center;margin-top:28px}
+.review-cta .btn{gap:9px}
+.review-cta svg{width:18px;height:18px}
+.follow-float{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:center;gap:10px;padding:12px 17px;border-radius:999px;color:#fff;font-weight:800;font-size:14px;letter-spacing:.1px;background:linear-gradient(110deg,#F9A03F 0%,#E1306C 52%,#833AB4 100%);box-shadow:0 10px 28px rgba(131,58,180,.34);transition:transform .2s,box-shadow .2s;direction:ltr}
+.follow-float:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(131,58,180,.42)}
+.follow-float svg{width:22px;height:22px;flex:none}
+[dir=rtl] .follow-float{right:auto;left:22px}
+@media(max-width:760px){.review-grid{grid-template-columns:1fr}.review-card{min-height:0}.stats-grid{gap:4px}.stat{padding:12px 6px}.stat span{font-size:12px}.follow-float{right:14px;bottom:14px;padding:12px 14px}.follow-float span{font-size:13px}[dir=rtl] .follow-float{left:14px}}
+@media(max-width:420px){.stats-grid{grid-template-columns:1fr;gap:0}.stat{border-inline-end:0;border-bottom:1px solid rgba(255,255,255,.14);padding:16px}.stat:last-child{border-bottom:0}}
+
+@media(max-width:960px){.hg,.ab{grid-template-columns:1fr}.vis{height:340px}.sg{grid-template-columns:repeat(2,1fr)}.tg,.st{grid-template-columns:repeat(2,1fr);gap:28px}.st:before{display:none}.fg{grid-template-columns:1fr}
+.bg{display:block}.links{position:absolute;top:100%;inset-inline:0;background:var(--navy);flex-direction:column;gap:0;padding:8px 22px 18px;max-height:0;overflow:hidden;padding-block:0;transition:.3s}
+.links.o2{max-height:420px;padding-block:8px 18px}.links a{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08)}.nav>.btn{display:none}.lang{margin-inline-start:auto}}
+@media(max-width:700px){.cb{grid-template-columns:1fr}}
+@media(max-width:560px){.sg{grid-template-columns:1fr}section{padding:64px 0}.hero{padding:48px 0 64px}.tg{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="w nav">
+<a class="logo" href="#home">
+<img class="lslot" id="logoSlot" src="icon.png" alt="JC_AZ4B logo">JC_AZ4B</a>
+<nav class="links" id="lk"><a href="#home" data-i="n0"></a><a href="#services" data-i="n1"></a><a href="#about" data-i="n2"></a><a href="#reviews" data-i="n5"></a><a href="#how" data-i="n3"></a><a href="#contact" data-i="n4"></a></nav>
+<a class="btn p" href="#contact" data-i="cta"></a>
+<div class="lang" id="lg"><button data-l="ar">العربية</button><button data-l="fr">FR</button><button data-l="en">EN</button></div>
+<button class="bg" id="bg" aria-label="Menu"><span></span><span></span><span></span></button>
+</div></header>
+
+<main>
+<div class="hero" id="home"><div class="w hg">
+<div><h1 id="h1"></h1><p class="hp" data-i="hp"></p>
+<div class="bs"><a class="btn p" href="#contact" data-i="cta"></a><a class="btn o" href="#services" data-i="b2"></a></div></div>
+<div class="vis" aria-hidden="true">
+<svg viewBox="0 0 400 400" fill="none" stroke="#22D3EE" stroke-opacity=".5" stroke-dasharray="4 5"><path d="M70 30 C110 90 150 110 200 150"/><path d="M340 170 C300 190 270 190 230 200"/><path d="M110 370 C130 320 160 280 190 250"/></svg>
+<div class="pan"><div class="dots"><i></i><i></i><i></i></div>
+<div style="font-weight:800;letter-spacing:1px;margin-bottom:16px;direction:ltr;color:#fff">JC_AZ4B</div>
+<div class="bar" style="width:70%"></div><div class="bar" style="width:45%"></div><div class="bar" style="width:60%"></div>
+<div class="blk"><b></b><b></b></div></div>
+<div class="chip c1" id="c1"></div><div class="chip c2" id="c2"></div><div class="chip c3" id="c3"></div>
+</div></div></div>
+
+<section class="stats" aria-label="JC_AZ4B at a glance"><div class="w stats-grid">
+<div class="stat"><strong>5,000+</strong><span data-i="m1">Happy clients</span></div>
+<div class="stat"><strong>100+</strong><span data-i="m2">Services offered</span></div>
+<div class="stat"><strong>100%</strong><span data-i="m3">Commitment to service quality</span></div>
+</div></section>
+
+<section class="ct" id="contact"><div class="w"><h2 data-i="ch"></h2><p data-i="cp"></p>
+<div class="cb">
+<a class="cc" href="https://wa.me/213772705246" target="_blank" rel="noopener"><i style="background:#25D366"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></i><div><b>WhatsApp</b><span>+213 772 70 52 46</span></div></a>
+<a class="cc" href="https://t.me/jc_az4b" target="_blank" rel="noopener"><i style="background:#229ED9"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></i><div><b>Telegram</b><span>@jc_az4b</span></div></a>
+<a class="cc" href="https://instagram.com/jc_az4b" target="_blank" rel="noopener"><i style="background:linear-gradient(45deg,#F9A03F,#E1306C 55%,#833AB4)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></i><div><b>Instagram</b><span>@jc_az4b</span></div></a>
+</div></div></section>
+
+<div class="tr"><div class="w tg" id="tg"></div></div>
+
+<section id="services"><div class="w"><h2 data-i="st"></h2><p class="sub" data-i="ss"></p><div class="sg" id="sg"></div></div></section>
+
+<section class="ft"><div class="w"><h2 data-i="ft"></h2><p class="sub" data-i="fs"></p><div class="fg" id="fg"></div><a class="btn p" href="#contact" data-i="fc"></a></div></section>
+
+<section id="about"><div class="w ab"><div><h2 data-i="ah"></h2><p data-i="ap"></p><p data-i="ap2"></p></div><div class="abx" id="abx"></div></div></section>
+
+<section class="reviews" id="reviews"><div class="w">
+<div class="reviews-head"><h2 data-i="rh">What customers say about us</h2><p class="sub" data-i="rs">Your experience matters. We are building this space to showcase genuine feedback from customers.</p></div>
+<div class="review-grid">
+<article class="review-card"><div class="review-stars" aria-hidden="true">“</div><p data-i="rp1">Your feedback could help someone choose the right digital service. Share your experience with JC_AZ4B.</p><div class="review-person"><div class="review-avatar" aria-hidden="true">JC</div><div><b data-i="rname1">Customer feedback</b><small data-i="rmeta1">Real review to be added</small></div></div></article>
+<article class="review-card"><div class="review-stars" aria-hidden="true">“</div><p data-i="rp2">Tell us what went well and what we can improve. Honest feedback helps us deliver better service.</p><div class="review-person"><div class="review-avatar" aria-hidden="true">JC</div><div><b data-i="rname2">Your opinion matters</b><small data-i="rmeta2">Customer experience</small></div></div></article>
+<article class="review-card"><div class="review-stars" aria-hidden="true">“</div><p data-i="rp3">Have we helped with a digital procedure, design, or technical issue? We would love to hear from you.</p><div class="review-person"><div class="review-avatar" aria-hidden="true">JC</div><div><b data-i="rname3">Share your experience</b><small data-i="rmeta3">Community feedback</small></div></div></article>
+</div>
+<div class="review-cta"><a class="btn p" href="https://instagram.com/jc_az4b" target="_blank" rel="noopener" data-i="rcta">Leave feedback on Instagram</a></div>
+</div></section>
+
+<section class="hw" id="how"><div class="w"><h2 data-i="hw" style="text-align:center;margin-bottom:48px"></h2><div class="st" id="st"></div></div></section>
+
+</main>
+<a class="follow-float" href="https://instagram.com/jc_az4b" target="_blank" rel="noopener noreferrer" aria-label="Follow JC_AZ4B on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span data-i="follow">Follow us!!</span></a>
+<footer data-i="fo"></footer>
+
+<script>
+var I={doc:'<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/>',pres:'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8M7 12l3-3 3 2 4-4"/>',pc:'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><circle cx="12" cy="10" r="2"/>',head:'<path d="M4 14v-2a8 8 0 0116 0v2"/><rect x="3" y="13" width="4" height="6" rx="1"/><rect x="17" y="13" width="4" height="6" rx="1"/><path d="M19 19c0 1.5-2 2-5 2"/>',form:'<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12l2 2 4-4M9 18h6"/>',pay:'<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/>',web:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01M7 13h6v4H7zM15 13h3"/>',brand:'<path d="M12 3a9 9 0 100 18c1.5 0 2-1 1.5-2s0-2 1.5-2h2a3 3 0 003-3c0-5-4-11-8-11z"/><circle cx="8" cy="11" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="16" cy="10" r="1"/>',chk:'<path d="M5 12l5 5 9-10"/>'};
+var ico=function(k){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+I[k]+'</svg>'};
+var K=['doc','pres','pc','head','form','pay','web','brand'];
+var T={
+en:{n5:'Reviews',m1:'Happy clients',m2:'Services offered',m3:'Commitment to service quality',rh:'What customers say about us',rs:'Your experience matters. This space is for genuine feedback from our customers.',rp1:'Have you used one of our services? Share your experience and help others discover JC_AZ4B.',rp2:'Your honest feedback helps us understand what works well and where we can improve.',rp3:'From digital procedures to design and technical assistance, we would love to hear how we helped you.',rname1:'Customer feedback',rmeta1:'Share your experience',rname2:'Your opinion matters',rmeta2:'Help us improve',rname3:'JC_AZ4B community',rmeta3:'Customer voices',rcta:'Leave feedback on Instagram',follow:'Follow us!!',n0:'Home',n1:'Services',n2:'About',n3:'How It Works',n4:'Contact',cta:'Request a Service',h:['Digital Services.','Simple Solutions.','Better Results.'],
+hp:'From digital registrations and technical assistance to presentations, research, branding and landing pages — JC_AZ4B brings practical digital services together in one place.',b2:'Explore Our Services',
+ch:['Presentations','Landing Pages','Online Payments'],
+tr:[['Simple','Easy communication and straightforward service.'],['Professional','Clean and carefully prepared results.'],['Digital','Modern tools and digital workflows.'],['Accessible','Services designed to be easy to request and understand.']],
+st:'What We Can Do For You',ss:'Practical digital, technical and creative services gathered in one place.',
+sv:[['Research Preparation','Preparation and formatting of academic and professional research documents.'],['Presentations','Professional PowerPoint and presentation design with clean visual structure.'],['Technical Assistance','Practical assistance with computers, software, digital tools and technical problems.'],['Technical Follow-up','Ongoing assistance and guidance for digital and technical tasks.'],['Electronic Registrations','Assistance with online registrations, forms and digital procedures.'],['Electronic Payments','Assistance with digital payment procedures and online transactions.'],['Landing Page Design','Modern, responsive landing pages designed for individuals, projects and businesses.'],['Business Cards & Logo Design','Professional visual identity elements that help your business look credible and memorable.']],
+ft:'Build Your Digital Presence',fs:'Creative services that give your project a clear and credible face.',
+fi:[['Landing Page Design','A modern, responsive page that presents you or your project clearly.'],['Logo Design','A simple, memorable mark that fits your activity.'],['Business Card Design','Clean cards that make a good first impression.']],fc:'Start Your Project',
+ah:'Digital help, without the complexity.',ap:'JC_AZ4B is a digital service brand focused on making everyday digital, technical and creative tasks easier. We bring together practical assistance, digital procedures, technical support and creative services in one simple and accessible place.',ap2:'Our aim is to save you time, simplify digital procedures and provide practical solutions.',
+ab:['Save your time','Simplify digital procedures','Practical solutions'],
+hw:'How It Works',sp:[['Choose a Service','Select what you need.'],['Contact Us','Send your request through WhatsApp, Telegram or Instagram.'],['Discuss the Details','We understand your requirements and agree on the details.'],['Get Your Service','Receive the completed service or assistance.']],
+ch2:'Contact Us',cp:'Send your request through WhatsApp, Telegram or Instagram and we will get back to you.',fo:'© 2026 JC_AZ4B. Digital solutions for easier work.'},
+fr:{n5:'Avis clients',m1:'Clients satisfaits',m2:'Services proposés',m3:'Engagement qualité',rh:'Ce que nos clients disent de nous',rs:'Votre expérience compte. Cet espace est dédié aux avis authentiques de nos clients.',rp1:'Vous avez utilisé l’un de nos services ? Partagez votre expérience et aidez d’autres personnes à découvrir JC_AZ4B.',rp2:'Vos commentaires sincères nous aident à identifier nos points forts et à nous améliorer.',rp3:'Démarches numériques, design ou assistance technique : dites-nous comment nous avons pu vous aider.',rname1:'Avis client',rmeta1:'Partagez votre expérience',rname2:'Votre avis compte',rmeta2:'Aidez-nous à progresser',rname3:'Communauté JC_AZ4B',rmeta3:'Paroles de clients',rcta:'Donner votre avis sur Instagram',follow:'Suivez-nous !!',n0:'Accueil',n1:'Services',n2:'À propos',n3:'Comment ça marche',n4:'Contact',cta:'Demander un service',h:['Services numériques.','Solutions simples.','Meilleurs résultats.'],
+hp:'Des inscriptions en ligne et de l’assistance technique aux présentations, recherches, identité visuelle et landing pages, JC_AZ4B réunit des services numériques pratiques en un seul endroit.',b2:'Découvrir nos services',
+ch:['Présentations','Landing pages','Paiements en ligne'],
+tr:[['Simple','Une communication facile et un service direct.'],['Professionnel','Des résultats soignés et bien préparés.'],['Numérique','Des outils modernes et des méthodes digitales.'],['Accessible','Des services faciles à demander et à comprendre.']],
+st:'Nos services',ss:'Des services numériques, techniques et créatifs réunis en un seul endroit.',
+sv:[['Préparation de recherches','Préparation et mise en forme de documents de recherche académiques et professionnels.'],['Création de présentations','Conception de présentations PowerPoint professionnelles, avec une structure visuelle claire.'],['Assistance technique','Aide pratique pour les ordinateurs, logiciels, outils numériques et problèmes techniques.'],['Suivi et accompagnement technique','Assistance et accompagnement continus pour vos tâches numériques et techniques.'],['Inscriptions électroniques','Aide pour les inscriptions en ligne, les formulaires et les démarches numériques.'],['Paiements électroniques','Aide pour les procédures de paiement numérique et les transactions en ligne.'],['Création de landing pages','Landing pages modernes et responsives pour particuliers, projets et entreprises.'],['Création de cartes de visite et logos','Des éléments d’identité visuelle professionnels pour une image crédible et mémorable.']],
+ft:'Construisez votre présence numérique',fs:'Des services créatifs pour donner à votre projet une image claire et crédible.',
+fi:[['Création de landing pages','Une page moderne et responsive qui présente clairement vous ou votre projet.'],['Création de logo','Un signe simple et mémorable, adapté à votre activité.'],['Création de cartes de visite','Des cartes soignées pour une bonne première impression.']],fc:'Démarrer votre projet',
+ah:'Des services numériques, sans complexité.',ap:'JC_AZ4B est une marque de services numériques qui simplifie les tâches numériques, techniques et créatives du quotidien. Nous réunissons assistance pratique, démarches en ligne, soutien technique et services créatifs en un seul endroit, simple et accessible.',ap2:'Notre objectif : vous faire gagner du temps, simplifier les démarches numériques et proposer des solutions pratiques.',
+ab:['Gagnez du temps','Démarches numériques simplifiées','Solutions pratiques'],
+hw:'Comment ça marche',sp:[['Choisissez un service','Sélectionnez ce dont vous avez besoin.'],['Contactez-nous','Envoyez votre demande via WhatsApp, Telegram ou Instagram.'],['Définissez les détails','Nous comprenons vos besoins et convenons des détails ensemble.'],['Recevez votre service','Recevez le service terminé ou l’assistance demandée.']],
+ch2:'Contactez-nous',cp:'Envoyez votre demande via WhatsApp, Telegram ou Instagram et nous vous répondrons.',fo:'© 2026 JC_AZ4B. Des solutions numériques pour un travail plus simple.'},
+ar:{n5:'آراء العملاء',m1:'عميل راضٍ',m2:'خدمة نقدّمها',m3:'التزام بجودة الخدمة',rh:'ماذا يقول عملاؤنا عنا؟',rs:'تجربتكم تهمّنا. هذا القسم مخصّص لآراء العملاء الحقيقية وتجاربهم.',rp1:'سبق لك الاستفادة من إحدى خدماتنا؟ شارك تجربتك وساعد الآخرين على اكتشاف JC_AZ4B.',rp2:'رأيك الصريح يساعدنا على معرفة ما نقدّمه جيدًا وما يمكننا تحسينه.',rp3:'سواء كانت إجراءات رقمية أو تصميمًا أو مساعدة تقنية، يسعدنا أن نعرف كيف ساعدناك.',rname1:'رأي عميل',rmeta1:'شارك تجربتك',rname2:'رأيك يهمّنا',rmeta2:'ساعدنا على التحسّن',rname3:'مجتمع JC_AZ4B',rmeta3:'آراء العملاء',rcta:'شارك رأيك على إنستغرام',follow:'تابعنا!!',n0:'الرئيسية',n1:'خدماتنا',n2:'من نحن',n3:'كيف نعمل',n4:'تواصل معنا',cta:'اطلب خدمة',h:['خدمات رقمية.','حلول بسيطة.','نتائج أفضل.'],
+hp:'من التسجيلات الإلكترونية والمساعدة التقنية إلى العروض التقديمية والبحوث والهوية البصرية وصفحات الهبوط، تجمع JC_AZ4B خدمات رقمية عملية في مكان واحد.',b2:'اكتشف خدماتنا',
+ch:['العروض التقديمية','صفحات الهبوط','الدفع الإلكتروني'],
+tr:[['بسيط','تواصل سهل وخدمة مباشرة.'],['احترافي','نتائج مرتبة ومُعدّة بعناية.'],['رقمي','أدوات حديثة وطرق عمل رقمية.'],['سهل الوصول','خدمات يسهل طلبها وفهمها.']],
+st:'خدماتنا',ss:'خدمات رقمية وتقنية وإبداعية عملية، مجتمعة في مكان واحد.',
+sv:[['إعداد البحوث','إعداد وتنسيق البحوث والوثائق الأكاديمية والمهنية.'],['تصميم العروض التقديمية','تصميم عروض PowerPoint احترافية ببنية بصرية واضحة ومرتبة.'],['المساعدة التقنية','مساعدة عملية في الحاسوب والبرامج والأدوات الرقمية والمشكلات التقنية.'],['المتابعة والمساعدة التقنية','مرافقة ومتابعة مستمرة للمهام الرقمية والتقنية.'],['التسجيلات الإلكترونية','مساعدة في التسجيلات عبر الإنترنت وملء الاستمارات والإجراءات الرقمية.'],['الدفع الإلكتروني','مساعدة في إجراءات الدفع الرقمي والمعاملات عبر الإنترنت.'],['تصميم صفحات الهبوط','صفحات هبوط حديثة ومتجاوبة للأفراد والمشاريع والشركات.'],['تصميم بطاقات العمل واللوغوهات','عناصر هوية بصرية احترافية تمنح عملك مظهراً موثوقاً ولا يُنسى.']],
+ft:'ابنِ حضورك الرقمي',fs:'خدمات إبداعية تمنح مشروعك واجهة واضحة وموثوقة.',
+fi:[['تصميم صفحات الهبوط','صفحة حديثة ومتجاوبة تعرّف بك أو بمشروعك بوضوح.'],['تصميم اللوغو','شعار بسيط لا يُنسى ويناسب نشاطك.'],['تصميم بطاقات العمل','بطاقات أنيقة تترك انطباعاً أولاً جيداً.']],fc:'ابدأ مشروعك',
+ah:'خدمات رقمية، بدون تعقيد.',ap:'JC_AZ4B علامة لخدمات رقمية تهدف إلى تسهيل المهام الرقمية والتقنية والإبداعية اليومية. نجمع المساعدة العملية والإجراءات الرقمية والدعم التقني والخدمات الإبداعية في مكان واحد بسيط وسهل الوصول.',ap2:'هدفنا أن نوفّر عليك الوقت، ونبسّط الإجراءات الرقمية، ونقدّم حلولاً عملية.',
+ab:['وفّر وقتك','إجراءات رقمية أبسط','حلول عملية'],
+hw:'كيف نعمل',sp:[['اختر الخدمة','حدّد ما تحتاج إليه.'],['تواصل معنا','أرسل طلبك عبر واتساب أو تيليغرام أو إنستغرام.'],['حدّد التفاصيل','نفهم احتياجاتك ونتفق معك على التفاصيل.'],['استلم خدمتك','استلم الخدمة المنجزة أو المساعدة المطلوبة.']],
+ch2:'تواصل معنا',cp:'أرسل طلبك عبر واتساب أو تيليغرام أو إنستغرام وسنرد عليك.',fo:'© 2026 JC_AZ4B. حلول رقمية .. لعمل أسهل'}};
+var $=function(s){return document.querySelector(s)},lang='en';
+function render(){var t=T[lang];
+document.querySelectorAll('[data-i]').forEach(function(e){var k=e.dataset.i;e.textContent=k=='ch'?t.ch2:t[k]});
+$('#h1').innerHTML=t.h.map(function(x){return '<span>'+x+'</span>'}).join('');
+[['#c1','presentation'],['#c2','landing'],['#c3','pay']].forEach(function(c,i){$(c[0]).innerHTML=ico(['pres','web','pay'][i])+t.ch[i]});
+$('#tg').innerHTML=t.tr.map(function(x){return '<div><b>'+x[0]+'</b><p>'+x[1]+'</p></div>'}).join('');
+$('#sg').innerHTML=t.sv.map(function(x,i){return '<div class="card'+(i==6?' k':'')+'"><div class="ic">'+ico(K[i])+'</div><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>'}).join('');
+var pv=['<svg viewBox="0 0 200 130"><rect x="30" y="20" width="140" height="90" rx="8" fill="#12365A"/><rect x="30" y="20" width="140" height="16" rx="8" fill="#1677FF"/><rect x="44" y="50" width="60" height="8" rx="4" fill="#22D3EE"/><rect x="44" y="66" width="90" height="6" rx="3" fill="#2B5A85"/><rect x="44" y="80" width="40" height="14" rx="4" fill="#1677FF"/></svg>','<svg viewBox="0 0 200 130"><rect x="68" y="30" width="64" height="64" rx="14" fill="#1677FF" transform="rotate(45 100 62)"/><circle cx="100" cy="62" r="16" fill="#071A2B"/><circle cx="100" cy="62" r="7" fill="#22D3EE"/></svg>','<svg viewBox="0 0 200 130"><rect x="40" y="30" width="120" height="70" rx="6" fill="#fff"/><rect x="40" y="30" width="8" height="70" fill="#1677FF"/><rect x="58" y="46" width="50" height="8" rx="4" fill="#071A2B"/><rect x="58" y="62" width="70" height="5" rx="2" fill="#94A3B8"/><rect x="58" y="74" width="46" height="5" rx="2" fill="#94A3B8"/><circle cx="140" cy="48" r="8" fill="#22D3EE"/></svg>'];
+$('#fg').innerHTML=t.fi.map(function(x,i){return '<div class="fc"><div class="pv">'+pv[i]+'</div><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>'}).join('');
+$('#abx').innerHTML=t.ab.map(function(x){return '<div>'+ico('chk')+x+'</div>'}).join('');
+$('#st').innerHTML=t.sp.map(function(x,i){return '<div class="stp"><div class="n">'+(i+1)+'</div><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>'}).join('');
+}
+function set(l){lang=l;try{localStorage.setItem('jc_lang',l)}catch(e){}
+var d=document.documentElement;d.lang=l;d.dir=l=='ar'?'rtl':'ltr';
+document.querySelectorAll('#lg button').forEach(function(b){b.classList.toggle('a',b.dataset.l==l)});render()}
+document.querySelectorAll('#lg button').forEach(function(b){b.onclick=function(){set(b.dataset.l)}});
+$('#bg').onclick=function(){$('#lk').classList.toggle('o2')};
+document.querySelectorAll('#lk a').forEach(function(a){a.onclick=function(){$('#lk').classList.remove('o2')}});
+addEventListener('scroll',function(){$('#hd').classList.toggle('s',scrollY>20)});
+var s='';try{s=localStorage.getItem('jc_lang')}catch(e){}
+if(!T[s]){var n=(navigator.language||'en').slice(0,2);s=T[n]?n:'en'}
+set(s);
+</script>
+</body>
+</html>
